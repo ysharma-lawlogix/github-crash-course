@@ -1,0 +1,8 @@
+name: Output Issues
+on:
+  issues:
+    types: opened
+jobs:
+  output:
+    steps:
+      - echo "${{ github }}"
