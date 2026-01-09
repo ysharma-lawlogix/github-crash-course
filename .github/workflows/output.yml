@@ -1,9 +1,0 @@
-name: Output Issues
-on:
-  issues:
-    types: opened
-jobs:
-  output:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "${{ toJSON(github) }}"
