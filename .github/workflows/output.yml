@@ -4,5 +4,6 @@ on:
     types: opened
 jobs:
   output:
+    runs-on: ubuntu-latest
     steps:
-      - echo "${{ github }}"
+      - run: echo "${{ github }}"
